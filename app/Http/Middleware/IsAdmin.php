@@ -16,12 +16,14 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(auth()->user()->IsAdmin()) {
-            return $next($request);
+        if (auth()->user()) {
+            if(auth()->user()->IsAdmin()) {
+                return $next($request);
+            } else {
+                return back();
+            }
         } else {
             return back();
         }
-
-        return $next($request);
     }
 }
