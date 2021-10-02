@@ -19,7 +19,7 @@ class PostController extends Controller
         if($validator->fails()) {
             return back()->with('status', 'Something went wrong!');
         } else {
-            $imageName = time() . "." . $request->thumbnail->extension();
+            $imageName = date("Y-m-d") .  time() . "." . $request->thumbnail->extension();
 
             $request->thumbnail->move(public_path('thumbnails'), $imageName);
 
