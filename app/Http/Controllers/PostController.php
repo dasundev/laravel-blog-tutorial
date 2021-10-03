@@ -23,7 +23,7 @@ class PostController extends Controller
 
             $request->thumbnail->move(public_path('thumbnails'), $imageName);
 
-            Post::create([
+            $post = Post::create([
                 'user_id' => auth()->user()->id,
                 'title' => $request->title,
                 'description' => $request->description,
