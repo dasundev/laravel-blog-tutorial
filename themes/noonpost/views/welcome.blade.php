@@ -23,7 +23,7 @@
                                             <ul class="list-inline">
                                                 <li>
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/img/author/1.jpg') }}" alt="">
+                                                        <img src="{{ asset('themes/noonpost/img/author/1.jpg') }}" alt="">
                                                     </a>
                                                 </li>
                                                 <li>

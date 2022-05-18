@@ -6,9 +6,13 @@
 <body>
 
 @include('partials.loading')
+
 @include('partials.header')
+
 @yield('content')
+
 @include('partials.footer')
+
 @include('includes.scripts')
 
 </body>

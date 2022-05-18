@@ -4,8 +4,8 @@
         <!--logo-->
         <div class="logo">
             <a href="/">
-                <img src="{{ asset('assets/img/logo-dark.png') }}"alt="" class="logo-dark">
-                <img src="{{ asset('assets/img/logo-white.png') }}" alt="" class="logo-white">
+                <img src="{{ asset('themes/noonpost/img/logo-dark.png') }}"alt="" class="logo-dark">
+                <img src="{{ asset('themes/noonpost/img/logo-white.png') }}" alt="" class="logo-white">
             </a>
         </div><!--/-->
 

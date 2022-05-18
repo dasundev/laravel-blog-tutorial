@@ -14,8 +14,8 @@
                             <h4>What the secrets you will know about jordan petra if visit it one day? </h4>
                             <div class="post-single-info">
                                 <ul class="list-inline">
-                                    <li><a href="author.html"><img src="{{ asset('assets/img/author/1.jpg') }}" alt=""></a></li>
-                                    <li><a href="author.html">David Smith</a> </li>
+                                    <li><a href="#"><img src="{{ asset('themes/noonpost/img/author/1.jpg') }}" alt=""></a></li>
+                                    <li><a href="#">David Smith</a> </li>
                                     <li class="dot"></li>
                                     <li>{{ \Illuminate\Support\Carbon::parse($post->created_at)->format('F d, Y') }}</li>
                                 </ul>

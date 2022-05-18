@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- favicon -->
-    <link rel="icon" sizes="16x16" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="icon" sizes="16x16" href="{{ asset('themes/noonpost/img/favicon.png') }}">
 
     <!-- Title -->
     <title> {{ env('APP_NAME', 'NoonPost') }} </title>
@@ -14,12 +14,12 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
 
     <!-- CSS Plugins -->
-    <link rel="stylesheet" href="{{ asset('assets/css/all.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/elegant-font-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('themes/noonpost/css/all.css') }}">
+    <link rel="stylesheet" href="{{ asset('themes/noonpost/css/elegant-font-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('themes/noonpost/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('themes/noonpost/css/owl.carousel.css') }}">
 
     <!-- main style -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('themes/noonpost/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('themes/noonpost/css/custom.css') }}">
 </head>
