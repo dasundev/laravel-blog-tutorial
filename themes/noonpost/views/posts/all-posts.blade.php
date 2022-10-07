@@ -15,6 +15,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Title</th>
                         <th scope="col">Description</th>
+                        <th scope="col">Created At</th>
                         <th scope="col">Action</th>
                     </tr>
                     </thead>
@@ -24,6 +25,7 @@
                             <th scope="row">{{ $post->id }}</th>
                             <td>{{ $post->title }}</td>
                             <td>{{ $post->description }}</td>
+                            <td>{{ $post->created_at }}</td>
                             <td class="d-flex">
                                 <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-sm btn-primary mr-2"><i
                                         class="fa fa-pencil-alt"></i></a>
