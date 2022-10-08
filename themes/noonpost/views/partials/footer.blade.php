@@ -1,5 +1,5 @@
 <!--footer-->
-<footer class="footer">
+<footer class="footer fixed-bottom">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
