@@ -18,7 +18,7 @@ class AdminSeeder extends Seeder
             'name' => 'Administrator',
             'email' => 'hello@dasun.dev',
             'password' => bcrypt(12345678),
-            'role' => 'admin'
+            'role' => ADMIN
         ]);
     }
 }
