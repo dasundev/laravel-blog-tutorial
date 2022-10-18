@@ -23,7 +23,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Posts
+// Posts
 Route::get('/posts/{postId}/show', [PostController::class, 'show'])->name('posts.show');
 Route::group(['middleware' => 'auth'], function () {
     Route::post('/posts/store', [PostController::class, 'store'])->name('posts.store');
@@ -33,7 +33,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/posts/{postId}/delete', [PostController::class, 'delete'])->name('posts.delete');
 });
 
-//Admin
+// Admin
 Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->middleware('admin')->name('dashboard');
 });
