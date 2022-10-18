@@ -33,7 +33,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/posts/{postId}/delete', [PostController::class, 'delete'])->name('posts.delete');
 });
 
-//Admin routes
+//Admin
 Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->middleware('admin')->name('dashboard');
 });
