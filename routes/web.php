@@ -24,16 +24,16 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Posts
-Route::get('/posts/{postId}/show', [PostController::class, 'show'])->name('posts.show');
-Route::group(['middleware' => 'auth'], function () {
-    Route::group(['prefix' => 'posts', 'as' => 'posts.'], function () {
+Route::group(['prefix' => 'posts', 'as' => 'posts.'], function () {
+    Route::get('/{postId}/show', [PostController::class, 'show'])->name('show');
+    Route::group(['middleware' => 'auth'], function () {
         Route::post('/store', [PostController::class, 'store'])->name('store');
         Route::get('/all', [HomeController::class, 'allPosts'])->name('all');
         Route::get('/{postId}/edit', [PostController::class, 'edit'])->name('edit');
         Route::post('/{postId}/update', [PostController::class, 'update'])->name('update');
         Route::get('/{postId}/delete', [PostController::class, 'delete'])->name('delete');
-    }
-});
+    });
+}
 
 // Admin
 Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
